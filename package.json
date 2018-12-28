@@ -1,0 +1,37 @@
+{
+  "name": "regl-d3",
+  "version": "0.0.1",
+  "description": "A testbed for discovering best practices working with regl and d3.",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js --open --live",
+    "build": "browserify index.js -t es2040 | indexhtmlify > index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigtimecriminal/regl-d3.git"
+  },
+  "keywords": [
+    "regl",
+    "d3",
+    "glslify",
+    "webgl"
+  ],
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "glslify"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^16.1.1",
+    "budo": "^11.2.0",
+    "glslify": "^6.1.1"
+  },
+  "dependencies": {
+    "canvas-orbit-camera": "^1.0.2",
+    "d3": "^5.1.0",
+    "gl-mat4": "^1.1.4",
+    "regl": "^1.3.1"
+  }
+}
