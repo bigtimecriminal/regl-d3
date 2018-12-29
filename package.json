@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo index.js --open --live",
-    "build": "browserify index.js -t es2040 | indexhtmlify > index.html"
+    "build": "browserify index.js -o bin.js"
   },
   "repository": {
     "type": "git",
